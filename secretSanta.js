@@ -23,7 +23,7 @@ function initSanta() {
   let saved = localStorage.getItem("secretSantaAssignments");
   if (!saved) {
     const result = secretSanta(names);
-    localStorage.setItem("secretSantaAssignments", JSON.stringify(result));
+    localStorage.removeItem("secretSantaAssignments");
   }
   loadWishes();
 }
