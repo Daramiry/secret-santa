@@ -1,22 +1,3 @@
-function secretSanta(names) {
-  let givers = [...names];
-  let receivers = [...names];
-  receivers.sort(() => Math.random() - 0.5);
-
-  for (let i = 0; i < givers.length; i++) {
-    if (givers[i] === receivers[i]) {
-      let swapIndex = (i + 1) % givers.length;
-      [receivers[i], receivers[swapIndex]] = [receivers[swapIndex], receivers[i]];
-    }
-  }
-
-  let assignments = {};
-  for (let i = 0; i < givers.length; i++) {
-    assignments[givers[i]] = receivers[i];
-  }
-  return assignments;
-}
-
 // Initialize assignments once
 function initSanta() {
   // Fixed assignments for everyone
