@@ -99,4 +99,18 @@ function deleteWish(name, index) {
   }
 }
 
+
+function resetAssignments() {
+  // Clear assignments and wishes
+  localStorage.removeItem("secretSantaAssignments");
+  localStorage.removeItem("secretSantaWishes");
+
+  // Confirm to the user
+  alert("Assignments and wishes have been reset. Please reload the page.");
+
+  // Optionally reload automatically:
+  // location.reload();
+}
+
+
 window.onload = initSanta;
