@@ -7,13 +7,15 @@
 <body>
   <h1 class="title">Secret Santa Wish List</h1>
 
-  <label class="label-text" for="nameInput">Enter your name:</label>
-  <input type="text" id="nameInput" class="input-field">
+  <div class="input-area">
+    <label class="label-text" for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" class="input-field">
 
-  <label class="label-text" for="wishInput">Add 3 gifts you would like:</label>
-  <input type="text" id="wishInput" class="input-field">
+    <label class="label-text" for="wishInput">Add 3 gifts you would like:</label>
+    <input type="text" id="wishInput" class="input-field">
 
-  <button class="btn primary-btn" onclick="saveWish()">Save Wish</button>
+    <button class="btn primary-btn" onclick="saveWish()">Save Wish</button>
+  </div>
 
   <h2 class="section-title">Your Wishes</h2>
   <div id="wishList" class="wish-list-container"></div>
